@@ -1,0 +1,27 @@
+<%= form_with(model: survey, local: true) do |form| %>
+<% if survey.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(survey.errors.count, "error") %>
+      prohibited this survey from being saved:</h2>
+
+    <ul>
+      <% survey.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<div class="actions">
+  <%= form.submit '5', type: :image, src: "/images/emoticons/rs_very_good.png", class: 'submit_emoticon btn', id: 'first_emoticon' %>
+  <%= form.submit '4', type: :image, src: "/images/emoticons/rs_good.png", class: 'submit_emoticon' %>
+  <%= form.submit '3', type: :image, src: "/images/emoticons/rs_neutral.png", class: 'submit_emoticon' %>
+  <%= form.submit '2', type: :image, src: "/images/emoticons/rs_bad.png", class: 'submit_emoticon' %>
+  <%= form.submit '1', type: :image, src: "/images/emoticons/rs_very_bad.png", class: 'submit_emoticon', id: 'last_emoticon' %>
+  <!-- <%= form.submit '5', class: 'submit_emoticon btn', id: 'first_emoticon' %>
+  <%= form.submit '4', class: 'submit_emoticon' %>
+  <%= form.submit '3', class: 'submit_emoticon' %>
+  <%= form.submit '2', class: 'submit_emoticon' %>
+  <%= form.submit '1', class: 'submit_emoticon' %> -->
+</div>
+<% end %>

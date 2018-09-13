@@ -1,0 +1,2 @@
+class AttentionDesk < ApplicationRecord
+end

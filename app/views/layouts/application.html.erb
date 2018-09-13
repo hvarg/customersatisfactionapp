@@ -4,11 +4,21 @@
     <title>Customersatisfactionapp</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <%= yield %>
+
+    <script>
+      $(document).ready(function () {
+        setTimeout(function () {
+          $('#notice_wrapper').fadeOut("slow", function () {
+            $(this).remove();
+          })
+        }, 4500);
+      });
+    </script>
   </body>
 </html>

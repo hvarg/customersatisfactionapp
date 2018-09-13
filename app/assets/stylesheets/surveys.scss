@@ -5,16 +5,38 @@
 .submit_emoticon {
   border-radius: 50%;
   width: 19%;
-  width: 300px;
-  margin-top: 20%;
-  margin-left: -150px;
+}
+
+h1{
+  text-align: center;
+  margin-top: 10%;
+  font-weight: bold;
+  font-size: 400%;
+  color: #006BBA;
+}
+
+h2{
+  text-align: center;
+  margin-bottom: 10%;
+  margin-bottom: 10%;
+  font-weight: bold;
+  font-size: 300%;
+  color: #006BBA;
 }
 
 #first_emoticon {
-  margin-left: 0px;
+  margin-left: 1%;
   // background:url(/images/emoticons/very_good.jpg) no-repeat;
 }
-
+#last_emoticon {
+  margin-right: 1%;
+  // background:url(/images/emoticons/very_good.jpg) no-repeat;
+}
+.logo{
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 10%;
+}
 // .submit_emoticon {
 //   border-radius: 50%;
 //   width: 150px;

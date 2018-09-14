@@ -4,9 +4,10 @@
 
 .submit_emoticon {
   border-radius: 50%;
-  width: 19%;
+  width: 15%;
   margin-top: 5%;
   margin-bottom: 5%;
+  margin-right: 2%;
 }
 
 #notice_wrapper {
@@ -46,7 +47,7 @@ h2 {
 }
 
 #first_emoticon {
-  margin-left: 1%;
+  margin-left: 8%;
   // background:url(/images/emoticons/very_good.jpg) no-repeat;
 }
 
@@ -56,8 +57,8 @@ h2 {
 }
 
 .logo {
-  width: 30%;
-  margin-left: 35%;
+  width: 40%;
+  margin-left: 30%;
 }
 
 @media screen and (max-width: 1024px) {

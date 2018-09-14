@@ -7,7 +7,7 @@
   width: 19%;
 }
 
-#notice_wrapper{
+#notice_wrapper {
   position: absolute;
   right: 0;
   top: 0;
@@ -16,7 +16,8 @@
   z-index: 999;
   background: #006BBA;
   opacity: 0.9;
-  .notice{
+
+  .notice {
     padding: 2.5rem 0;
     text-align: center;
     margin: 0;
@@ -27,7 +28,7 @@
   }
 }
 
-h1{
+h1 {
   text-align: center;
   margin-top: 5%;
   font-weight: bold;
@@ -35,7 +36,7 @@ h1{
   color: #006BBA;
 }
 
-h2{
+h2 {
   text-align: center;
   margin-bottom: 10%;
   margin-bottom: 10%;
@@ -48,11 +49,13 @@ h2{
   margin-left: 1%;
   // background:url(/images/emoticons/very_good.jpg) no-repeat;
 }
+
 #last_emoticon {
   margin-right: 1%;
   // background:url(/images/emoticons/very_good.jpg) no-repeat;
 }
-.logo{
+
+.logo {
   width: 50%;
   margin-left: 25%;
   margin-top: 5%;
@@ -64,10 +67,8 @@ h2{
 //   margin: 1%;
 //   margin-top: 20%;
 // }
-
 // input[type="submit"]
 // {
 //   background:url(/images/emoticons/very_bad.png);
 // }
-
 //background:url(./images/but2.png) no-repeat;

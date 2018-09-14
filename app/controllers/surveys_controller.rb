@@ -24,16 +24,16 @@ class SurveysController < ApplicationController
   # POST /surveys
   # POST /surveys.json
   def create
-    if params[:commit] == '2'
-        @survey = Survey.new(score: 1)
-    elsif params[:commit] == '4'
+    if params[:commit] == '1'
         @survey = Survey.new(score: 2)
-    elsif params[:commit] == '6'
-        @survey = Survey.new(score: 3)
-    elsif params[:commit] == '8'
+    elsif params[:commit] == '2'
         @survey = Survey.new(score: 4)
-    elsif params[:commit] == '10'
-        @survey = Survey.new(score: 5)
+    elsif params[:commit] == '3'
+        @survey = Survey.new(score: 6)
+    elsif params[:commit] == '4'
+        @survey = Survey.new(score: 8)
+    elsif params[:commit] == '5'
+        @survey = Survey.new(score: 10)
     end
     # @survey.attention_desk_id = 1
     respond_to do |format|

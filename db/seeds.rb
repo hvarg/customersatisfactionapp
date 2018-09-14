@@ -6,5 +6,5 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-ad1 = AttentionDesk.new(name: 'Test Desk')
-ad1.save!
+# ad1 = AttentionDesk.new(name: 'Test Desk')
+# ad1.save!

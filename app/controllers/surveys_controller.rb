@@ -24,18 +24,18 @@ class SurveysController < ApplicationController
   # POST /surveys
   # POST /surveys.json
   def create
-    if params[:commit] == '1'
+    if params[:commit] == '2'
         @survey = Survey.new(score: 1)
-    elsif params[:commit] == '2'
-        @survey = Survey.new(score: 2)
-    elsif params[:commit] == '3'
-        @survey = Survey.new(score: 3)
     elsif params[:commit] == '4'
+        @survey = Survey.new(score: 2)
+    elsif params[:commit] == '6'
+        @survey = Survey.new(score: 3)
+    elsif params[:commit] == '8'
         @survey = Survey.new(score: 4)
-    elsif params[:commit] == '5'
+    elsif params[:commit] == '10'
         @survey = Survey.new(score: 5)
     end
-    @survey.attention_desk_id = 1
+    # @survey.attention_desk_id = 1
     respond_to do |format|
       if @survey.save
         format.html { redirect_to new_survey_path, notice: '¡Gracias! - ¡di ou mèsi!' }

@@ -2,11 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+    background-color: #003C4C;
+}
+
 .submit_emoticon {
   border-radius: 50%;
   width: 15%;
   margin-top: 5%;
-  margin-bottom: 5%;
   margin-right: 2%;
 }
 
@@ -17,7 +20,7 @@
   margin: 0;
   width: 100%;
   z-index: 999;
-  background: #006BBA;
+  background: #FE7A00;
   opacity: 0.9;
 
   .notice {
@@ -26,7 +29,7 @@
     margin: 0;
     font-size: 2rem;
     font-weight: 700;
-    color: #FFFFFF;
+    color: #FEFEFE;
     letter-spacing: 1px;
   }
 }
@@ -35,7 +38,7 @@ h1 {
   text-align: center;
   font-weight: bold;
   font-size: 400%;
-  color: #006BBA;
+  color: #FEFEFE;
   margin-top: 5%;
 }
 
@@ -43,7 +46,7 @@ h2 {
   text-align: center;
   font-weight: bold;
   font-size: 300%;
-  color: #006BBA;
+  color: #FEFEFE;
 }
 
 #first_emoticon {
@@ -57,10 +60,13 @@ h2 {
 }
 
 .logo {
-  width: 40%;
-  margin-left: 30%;
+  width: 60%;
+  margin-left: 20%;
 }
 @media screen and (max-width: 1024px) {
+  body {
+      background-color: #003C4C;
+  }
   .submit_emoticon {
     border-radius: 50%;
     width: 19%;
@@ -73,7 +79,7 @@ h2 {
     margin: 0;
     width: 100%;
     z-index: 999;
-    background: #006BBA;
+    background: #FE7A00;
     opacity: 0.9;
 
     .notice {
@@ -82,7 +88,7 @@ h2 {
       margin: 0;
       font-size: 2rem;
       font-weight: 700;
-      color: #FFFFFF;
+      color: #FEFEFE;
       letter-spacing: 1px;
     }
   }

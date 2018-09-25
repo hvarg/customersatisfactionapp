@@ -38,7 +38,7 @@ class SurveysController < ApplicationController
     # @survey.attention_desk_id = 1
     respond_to do |format|
       if @survey.save
-        format.html { redirect_to new_survey_path, notice: '¡Gracias! - ¡di ou mèsi!' }
+        format.html { redirect_to new_survey_path, notice: '¡Gracias! - ¡Thank you!' }
         format.json { render :show, status: :created, location: @survey }
       else
         format.html { render :new }

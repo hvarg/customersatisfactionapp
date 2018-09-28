@@ -5,8 +5,8 @@
 .submit_emoticon {
   border-radius: 50%;
   width: 15%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  // margin-top: 5%;
+  // margin-bottom: 5%;
   margin-right: 2%;
 }
 
@@ -47,12 +47,12 @@ h2 {
 }
 
 #first_emoticon {
-  margin-left: 8%;
+  // margin-left: 8%;
   // background:url(/images/emoticons/very_good.jpg) no-repeat;
 }
 
 #last_emoticon {
-  margin-right: 1%;
+  // margin-right: 1%;
   // background:url(/images/emoticons/very_good.jpg) no-repeat;
 }
 
@@ -64,6 +64,7 @@ h2 {
   .submit_emoticon {
     border-radius: 50%;
     width: 17%;
+    margin-left: 30%;
   }
 
   #notice_wrapper {
@@ -103,7 +104,7 @@ h2 {
   }
 
   #first_emoticon {
-    margin-left: 3%;
+    // margin-left: 3%;
     // background:url(/images/emoticons/very_good.jpg) no-repeat;
   }
 

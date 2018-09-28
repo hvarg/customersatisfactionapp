@@ -14,10 +14,30 @@
   <% end %>
 
   <div class="actions">
-    <%= form.submit '', type: :image, src: "/images/emoticons/rs_very_good.png", class: 'submit_emoticon btn', id: 'first_emoticon', name: "very_good[]" %>
-    <%= form.submit '', type: :image, src: "/images/emoticons/rs_good.png", class: 'submit_emoticon', name: "good[]"%>
-    <%= form.submit '', type: :image, src: "/images/emoticons/rs_neutral.png", class: 'submit_emoticon', name: "neutral[]" %>
-    <%= form.submit '', type: :image, src: "/images/emoticons/rs_bad.png", class: 'submit_emoticon', name: "bad[]" %>
-    <%= form.submit '', type: :image, src: "/images/emoticons/rs_very_bad.png", class: 'submit_emoticon', id: 'last_emoticon', name: "very_bad[]" %>
+    <p>
+      <div id="container">
+        <div id="left">
+          <p>Muy Bueno</p>
+        </div>
+        <div id="center">
+          <%= form.submit '', type: :image, src: "/images/emoticons/rs_very_good.png", class: 'submit_emoticon btn', id: 'first_emoticon', name: "very_good[]" %>
+        </div>
+        <div id="right">
+          <p>Muy Bueno</p>
+        </div>
+      </div>
+    </p>
+    <p>
+      <%= form.submit '', type: :image, src: "/images/emoticons/rs_good.png", class: 'submit_emoticon', name: "good[]"%>
+    </p>
+    <p>
+      <%= form.submit '', type: :image, src: "/images/emoticons/rs_neutral.png", class: 'submit_emoticon', name: "neutral[]" %>
+    </p>
+    <p>
+      <%= form.submit '', type: :image, src: "/images/emoticons/rs_bad.png", class: 'submit_emoticon', name: "bad[]" %>
+    </p>
+    <p>
+      <%= form.submit '', type: :image, src: "/images/emoticons/rs_very_bad.png", class: 'submit_emoticon', id: 'last_emoticon', name: "very_bad[]" %>
+    </p>
   </div>
 <% end %>

@@ -47,7 +47,6 @@ Si existen problemas con el certificado una posible solución es la siguiente:
   # From https://serverfault.com/questions/498588/smtp-gmail-com-from-bash-gives-error-in-certificate-peers-certificate-issuer
   $ mkdir certs
   $ certutil -N -d certs
-  $ sudo yum install wget
   $ wget https://www.geotrust.com/resources/root_certificates/certificates/GeoTrust_Global_CA.cer
   $ mv GeoTrust_Global_CA.cer certs/
   $ echo -n | openssl s_client -connect smtp.gmail.com:465 -CAfile certs/GeoTrust_Global_CA.cer | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > GMAILCERT

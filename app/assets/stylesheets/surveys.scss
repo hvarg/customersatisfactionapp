@@ -13,6 +13,13 @@
   -webkit-user-drag: none;
 }
 
+.submit_flag {
+  width: 15%;
+  user-drag: none; 
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
 #notice_wrapper {
   position: absolute;
   right: 0;

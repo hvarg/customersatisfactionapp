@@ -1,6 +1,57 @@
-<h1>Editing Survey</h1>
 
-<%= render 'form', survey: @survey %>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<div class="container">
+  <div class="vertical-center">
+    <h1>Selecciona tu pais:</h1>
+    <h2>Èske ou se Ayisyen?:</h2>
 
-<%= link_to 'Show', @survey %> |
-<%= link_to 'Back', surveys_path %>
+    <%= form_with(model: @survey, local: true) do |form| %>
+      <div class="acciones">
+        <div class="row">
+          <div class="col-6">
+            <%= form.submit '', type: :image, src:"/images/flags/venezuela.png", class: 'submit_flag, img-fluid', id: '', name: "venezuela[]" %>
+          </div>
+          <div class="col-6">
+            <%= form.submit '', type: :image, src:"/images/flags/haiti.png", class: 'submit_flag, img-fluid', id: '', name: "haiti[]" %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <%= form.submit '', type: :image, src:"/images/flags/peru.png", class: 'submit_flag, img-fluid', id: '', name: "peru[]" %>
+          </div>
+          <div class="col-3">
+            <%= form.submit '', type: :image, src:"/images/flags/colombia.png", class: 'submit_flag, img-fluid', id: '', name: "colombia[]" %>
+          </div>
+          <div class="col-3">
+            <%= form.submit '', type: :image, src:"/images/flags/bolivia.png", class: 'submit_flag, img-fluid', id: '', name: "bolivia[]" %>
+          </div>
+          <div class="col-3">
+            <%= form.submit '', type: :image, src:"/images/flags/argentina.png", class: 'submit_flag, img-fluid', id: '', name: "argentina[]" %>
+          </div>
+          <div class="col-3">
+            <%= form.submit '', type: :image, src:"/images/flags/ecuador.png", class: 'submit_flag, img-fluid', id: '', name: "ecuador[]" %>
+          </div>
+          <div class="col-3">
+            <%= form.submit '', type: :image, src:"/images/flags/spain.png", class: 'submit_flag, img-fluid', id: '', name: "espana[]" %>
+          </div>
+          <div class="col-3">
+            <%= form.submit '', type: :image, src:"/images/flags/brazil.png", class: 'submit_flag, img-fluid', id: '', name: "brazil[]" %>
+          </div>
+          <div class="col-3">
+            <%= form.submit 'Otro', type: :image, src:"/images/flags/otro.jpg", class: 'submit_flag, img-fluid', id: '', name: "otro[]" %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+
+    <%= image_tag ("/images/emoticons/logo-migraciones.png"), class: 'logo' %>
+  </div>
+</div> 
+
+
+<script>
+   setTimeout(function(){
+      window.location.href = '/';
+   }, 10000);
+</script>
+<!-- Añadir el redirect en 5s -->

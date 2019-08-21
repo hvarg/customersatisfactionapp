@@ -6,19 +6,18 @@
   <thead>
     <tr>
       <th>Score</th>
-      <th>Attention desk</th>
+      <th>Pais</th>
+      <th>Fecha</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
-    <% @surveys.each do |survey| %>
+    <% @surveys.order(created_at: :desc).each do |survey| %>
       <tr>
         <td><%= survey.score %></td>
-        <td></td>
-        <td><%= link_to 'Show', survey %></td>
-        <td><%= link_to 'Edit', edit_survey_path(survey) %></td>
-        <td><%= link_to 'Destroy', survey, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= survey.country %></td>
+        <td><%= survey.created_at.in_time_zone("Eastern Time (US & Canada)") %></td>
       </tr>
     <% end %>
   </tbody>

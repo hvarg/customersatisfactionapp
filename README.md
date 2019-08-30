@@ -18,7 +18,7 @@ Para hacer correr la applicación:
 
 ```bash
   $ bundle install
-  $ sudo -u postgres createuser $(whoami)
+  $ sudo -u postgres createuser $(whoami) https://stackoverflow.com/questions/23125872/creating-user-for-postgresql-on-rails
   $ rake db:create
   $ bin/rails db:migrate RAILS_ENV=development
   $ bin/rails server

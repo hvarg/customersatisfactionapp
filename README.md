@@ -17,6 +17,7 @@ Las dependencias y versiones utilizadas son las siguientes:
 Para hacer correr la applicación:
 
 ```bash
+  $ sudo apt-get install libpq-dev zlib1g-dev
   $ bundle install
   $ sudo -u postgres createuser $(whoami) https://stackoverflow.com/questions/23125872/creating-user-for-postgresql-on-rails
   $ rake db:create
